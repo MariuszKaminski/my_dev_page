@@ -92,6 +92,41 @@
             background-color: #0099ff;
         }
 
+        /* ##### Responsive layout CSS ##### */
+
+        @media (max-width: 840px) { /*Drop Right Column Down */
+
+        #leftcolumn {
+                margin-left: -100%;
+            }
+
+        #rightcolumn {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                clear: both;
+            }
+        
+        #contentcolumn {
+                margin-right: 0; /*Set margin to LeftColumnWidth */
+            }
+        }
+        
+        @media (max-width: 600px) { /* Drop Left Column Down */
+
+            #leftcolumn {
+                float: none;
+                width: 100%;
+                clear: both;
+                margin-left: 0;
+            }
+
+            #contentcolumn {
+                margin-left: 0;
+            }
+        }
+
+
     </style>
 
 </head>
